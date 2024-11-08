@@ -1,0 +1,37 @@
+package day2;
+
+import java.util.Scanner;
+
+public class MarksValidations {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner (System.in);
+		System.out.println("enter the marks:");
+		int marks =scanner.nextInt();
+		if(marks>=81 && marks<=100) {
+				System.out.println("Distinction");
+	}
+	else if(marks>=51 && marks<=80) {
+		System.out.print("first class");
+	}
+	else if(marks>=35 && marks<=50) {
+		System.out.print("second class");
+	
+	}
+	else if(marks>=0 && marks<=34) {
+		System.out.print("fail");
+	}
+	else {
+		System.out.print("invalid marks.marks should be between 0 and 100");
+	}
+	scanner.close();
+		
+				
+
+	}
+
+}
+output:
+enter the marks:
+80
+first class
