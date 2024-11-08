@@ -1,0 +1,19 @@
+
+package day6;
+
+public class Operators {
+
+	public static void main(String[] args) {
+		
+	
+		int a =10;
+		int b=--a + ++a + a++ + a-- + --a;
+		System.out.println(a);
+		System.out.println(b);
+
+	}
+
+}
+output:
+9
+49
