@@ -1,0 +1,32 @@
+package Day12;
+
+class CreditCard  //parent class
+{
+	int cardNo= 12345678;
+	int pin=4781;
+}
+class Hacker extends CreditCard //child class
+{
+	void viewDetails()
+	{
+		System.out.println("cardNo :" + cardNo);
+		System.out.println("pin number :"+pin);
+	}
+	void changeDetails()
+	{
+		cardNo=258963;
+		pin = 1234;
+	}
+}
+public class ExampleForInheritance {
+
+	public static void main(String[] args) {
+		Hacker h = new Hacker();
+		h.viewDetails(); 
+		h.changeDetails();
+	}
+
+}
+output:
+cardNo :12345678
+pin number :4781
