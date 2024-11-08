@@ -1,0 +1,31 @@
+package day3;
+
+public class loginvalidation1 {
+
+	public static void main(String[] args) {
+		String userid ="Admin";
+		int password =1234567890;
+		if(userid.equals("Admin"))
+		{
+			System.out.println("Userid is valid");
+			if(password == 1234567890)
+			{
+				System.out.println("password is valid");
+				System.out.println("login successfully");
+			}
+			else
+			{
+				System.out.println("password is invalid");
+				System.out.println("login is unsuccessfully");
+			}
+		}
+			else
+			{
+				System.out.println("userid id invalid");
+				System.out.println("login unsuccessfully");
+			}
+			}
+  output:
+  Userid is valid
+password is valid
+login successfully
